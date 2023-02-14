@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.netology.testmode.test.AuthTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-14T16:48:46" hostname="LAPTOP-BBE9KCEL" time="9.495">
+  <properties/>
+  <testcase name="Should get error message if login with not registered user" classname="ru.netology.testmode.test.AuthTest" time="5.014"/>
+  <testcase name="Should get error message if login with blocked registered user" classname="ru.netology.testmode.test.AuthTest" time="2.176"/>
+  <testcase name="Should successfully login with active registered user" classname="ru.netology.testmode.test.AuthTest" time="0.673"/>
+  <testcase name="Should get error message if login with wrong password" classname="ru.netology.testmode.test.AuthTest" time="0.658"/>
+  <testcase name="Should get error message if login with wrong login" classname="ru.netology.testmode.test.AuthTest" time="0.971"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "joan.bartoletti",
+    "password": "p1u99ms4k6h8p",
+    "status": "blocked"
+}
+Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "alfredo.keebler",
+    "password": "4trj8x7n8u2",
+    "status": "active"
+}
+Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "tristan.balistreri",
+    "password": "2skt3hmcdm6wkze",
+    "status": "active"
+}
+Request method:	POST
+Request URI:	http://localhost:9999/api/system/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "login": "marnie.satterfield",
+    "password": "1ahfahs1nf4t7",
+    "status": "active"
+}
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 46712
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+февр. 14, 2023 7:48:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
